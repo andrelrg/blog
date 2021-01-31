@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+
+  <head>
+    <title>{{title}}</title>
+    <meta charset="utf-8">
+    <meta name="description" content={{description}}>
+    <link rel="shortcut icon" href="/favicon.ico">
+
+    <link
+        href="{{ url_for('static', filename='dist/css/style.min.css') }}"
+        rel="stylesheet"
+        type="text/css"
+    />
+    <script
+        src="{{ url_for('static', filename='dist/js/main.min.js') }}">
+    </script>
+  </head>
+
+  <body>
+    {% include 'navigation.html' %}
+    {% block content %}{% endblock %}
+  </body>
+
+</html>
