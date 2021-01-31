@@ -4,9 +4,69 @@
 html,
 body {
   font-family: @body-font;
+  color: @font-color;
+  background: @background-color;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-body {
-    color: white;
-    background: @theme-color;
+header{
+  display: flex;
+  justify-content: space-between;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 200px;
+  a {
+    padding-left: 15px;
+    padding-right: 15px;
+    font-family: @nav-links-font;
+    color: @font-color;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: @theme-color
+  }
+}
+
+.active {
+  color: @theme-color
+}
+
+.right-spaced {
+  padding-right: 30px;     
+}
+
+.right-doubled-spaced {
+  padding-right: 60px;     
+}
+
+.title {
+  font-family:@title-font;
+  font-size: 20px;
+  font-weight: 900;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  width: fit-content;
+  a {
+    text-decoration: none;
+    color: @font-color;
+  }
+}
+
+.blinker {
+  animation: blinker 1s linear infinite;
+  font-size: 18px;
+}
+
+@keyframes blinker {
+  100% {
+    opacity: 0;
+  }
 }

@@ -1,7 +1,9 @@
 <header>
+    <div class="title"><a href="/">$ programmer_life<span class="blinker"> █</span></a></div>
     <nav>
-     <a href="https://example.com">Link 1</a>
-     <a href="https://example.com">Link 2</a>
-     <a href="https://example.com">Link 3</a>
+      <a class="{% if active == 'home' %} active {% endif %}" href="/">Home</a> 
+      <a class="{% if active == 'posts' %} active {% endif %}" href="/posts">Posts</a>
+      <a class="{% if active == 'threads' %} active {% endif %}" href="/threads">Threads</a>
+      <a class="{% if active == 'about' %} active {% endif %}right-spaced" href="/about">About</a>
    </nav>
  </header>
