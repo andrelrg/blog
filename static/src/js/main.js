@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
             let span = document.createElement('span');
             span.textContent = " by "
-            span.className = "by-text"
+            span.className = "italic-grey"
             el.appendChild(span);
 
             let a = document.createElement('a')
@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
             span = document.createElement('span');
             span.textContent = " at "
-            span.className = "by-text"
+            span.className = "italic-grey"
             el.appendChild(span);
 // date formatting
         });
