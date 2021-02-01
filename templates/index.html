@@ -1,8 +1,20 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    <div class="container">
-        <h1>{{title}}</h1>
-        <p>{{description}}</p>
+    <div class="index">
+        <div class="home">
+            <!-- for nos posts -->
+            <div class="post-preview">
+                <h1>{{title}}</h1>
+                <div class="from" name="from" attr="{{git}}">$ </div>
+                <p>{{description}}</p>
+            </div>
+            <!-- for nos posts -->
+            <div class="threads-preview">
+                <h1>{{title}}</h1>
+                <p>{{description}}</p>
+            </div>
+        </div>
     </div>
+   
 {% endblock %}
