@@ -17,6 +17,19 @@
                     </div>
                 </div>
             </div>
+            <div class="post-preview">
+                <div class="post" onclick="location.href='/posts/{{post_url}}'">
+                    <h1>{{title}}</h1>
+                    <div class="from" name="from" attr="{{git}}">$ </div>
+                    <p>{{description}}</p>
+                    <div class="tags">
+                        <p class="italic-grey">Tags: </p>
+                    {% for tag in tags %}
+                        <span><p>{{tag}}</p></span>
+                    {% endfor %}
+                    </div>
+                </div>
+            </div>
             <!-- for nos posts -->
             <div class="post-preview">
                 <div class="thread">
