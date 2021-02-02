@@ -2,10 +2,10 @@
 <html>
 
   <head>
-    <title>{{title}}</title>
+    <title>$programmer_life</title>
     <meta charset="utf-8">
     <meta name="description" content={{description}}>
-    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='dist/img/favicon.ico') }}" type="image/x-icon"/>
 
     <link
         href="{{ url_for('static', filename='dist/css/style.min.css') }}"
